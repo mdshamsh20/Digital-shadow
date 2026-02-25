@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Shadow | Face Tracking Experiment</title>
+    <meta name="description" content="An interactive face-tracking particle experiment inspired by Nicholas Plum, built with Three.js and MediaPipe." />
+    <script type="module" crossorigin src="/assets/index-CcPTBpq-.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-5kVJWYMk.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="loading-screen" id="loading-screen">
+        <div class="loader"></div>
+        <div class="loading-text">Initializing Neural Engine...</div>
+      </div>
+
+      <div class="ui-overlay">
+        <header class="header">
+          <div class="title-container">
+            <h1>Digital Shadow</h1>
+            <p>Interactive Generative Face Experiment</p>
+          </div>
+          <div class="status-badge">
+            <div class="status-dot" id="status-dot"></div>
+            <span id="status-text">CALIBRATING FACE MESH</span>
+          </div>
+        </header>
+
+        <div class="controls-hint">
+          <span>MOVE YOUR FACE</span>
+          <span>•</span>
+          <span>INTERACTIVE SHADOW</span>
+          <span>•</span>
+          <span>@TOUCHDESIGNER VIBES</span>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas id="webcam-canvas"></canvas>
+      </div>
+
+      <canvas id="main-canvas"></canvas>
+    </div>
+  </body>
+</html>
